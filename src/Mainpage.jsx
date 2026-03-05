@@ -790,7 +790,7 @@ function Hero() {
           <strong>Bellesoft Department</strong> as a full stack intern. This weekly blog shares my hands-on experiences, lessons learned, and growth in real-world development.
         </p>
         <div className="hero-btns">
-          <a href="#weekly-blog" className="btn-primary"><IconPlay /> Watch My OJT Journey</a>
+          <a href="#video" className="btn-primary"><IconPlay /> Watch My OJT Journey</a>
           <a href="#weekly-blog" className="btn-outline">Read Blog</a>
         </div>
       </div>

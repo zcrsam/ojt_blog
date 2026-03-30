@@ -10,14 +10,15 @@ import ojtVid from "./assets/ojtvid.MOV";
 import MediaPage from "./MediaPage";
 
 // ── SCRAPBOOK PHOTO IMPORTS ───────────────────────────────────────────────────
-// Week 1 photos — from scrap1 folder
 import scrap1_a from "./assets/scrap1/1.jpg";
 import scrap1_b from "./assets/scrap1/2.jpg";
 import scrap1_c from "./assets/scrap1/3.png";
 import scrap1_d from "./assets/scrap1/4.jpg";
 import scrap1_e from "./assets/scrap1/5.png";
+import scrap1_f from "./assets/scrap1/6.png";
+import scrap1_g from "./assets/scrap1/7.png";
+import scrap1_h from "./assets/scrap1/8.png";
 
-// Food & Perks photos — from food folder (all 12)
 import food_a from "./assets/food/1.png";
 import food_b from "./assets/food/2.jpg";
 import food_c from "./assets/food/3.jpg";
@@ -28,21 +29,19 @@ import food7 from "./assets/food/food7.png";
 import food8 from "./assets/food/food8.JPG";
 import food9 from "./assets/food/food9.png";
 
-// Tasks / Tech Stack photos — from tasks folder
 import task_a from "./assets/tasks/1.png";
 import task_b from "./assets/tasks/2.jpg";
 import task_c from "./assets/tasks/3.jpg";
 import task_d from "./assets/tasks/4.png";
 
-// Team photos — from team folder
 import team_a from "./assets/team/1.jpg";
 import team_b from "./assets/team/2.jpg";
 import team_c from "./assets/team/3.jpg";
 import team_d from "./assets/team/4.jpg";
 
-const SCRAP_IMGS = [scrap1_a, scrap1_b, scrap1_c, scrap1_d, scrap1_e, food_a, food_b, food_c, food_d, task_a, task_b, task_c, task_d, team_a, team_b, team_c, team_d];
+const SCRAP_IMGS = [scrap1_a, scrap1_b, scrap1_c, scrap1_d, scrap1_e, scrap1_f, scrap1_g, scrap1_h, food_a, food_b, food_c, food_d, task_a, task_b, task_c, task_d, team_a, team_b, team_c, team_d];
 
-// ── WEEK DATA WITH DAILY TASKS ────────────────────────────────────────────────
+// ── WEEK DATA ─────────────────────────────────────────────────────────────────
 const POSTS = [
   {
     id: 1,
@@ -162,39 +161,12 @@ const POSTS = [
       deliverables: ["Deployed System", "Technical Documentation", "Presentation Deck"],
     },
   },
-  {
-    id: 7,
-    title: "Week 7",
-    excerpt: "Coming soon...",
-    author: "Sarah C. Abane",
-    date: "April 6-10 2026",
-    category: "WEEK 7",
-    imageUrl: week1Image2,
-    modal: null,
-  },
-  {
-    id: 8,
-    title: "Week 8",
-    excerpt: "Coming soon...",
-    author: "Sarah C. Abane",
-    date: "April 13-17 2026",
-    category: "WEEK 8",
-    imageUrl: week1Image2,
-    modal: null,
-  },
-  {
-    id: 9,
-    title: "Week 9",
-    excerpt: "Coming soon...",
-    author: "Sarah C. Abane",
-    date: "April 20-24 2026",
-    category: "WEEK 9",
-    imageUrl: week1Image2,
-    modal: null,
-  },
+  { id: 7, title: "Week 7", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 6-10 2026", category: "WEEK 7", imageUrl: week1Image2, modal: null },
+  { id: 8, title: "Week 8", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 13-17 2026", category: "WEEK 8", imageUrl: week1Image2, modal: null },
+  { id: 9, title: "Week 9", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 20-24 2026", category: "WEEK 9", imageUrl: week1Image2, modal: null },
 ];
 
-// ── GALLERY DATA — 4 themed pages ─────────────────────────────────────────────
+// ── GALLERY DATA ──────────────────────────────────────────────────────────────
 const GALLERY_ITEMS = [
   {
     id: 1,
@@ -206,14 +178,8 @@ const GALLERY_ITEMS = [
     tag: "Research · Flowchart · Laravel · React",
     theme: "week",
     sticker: "✦",
-    captions: [
-      "my name plate! ▬",
-      "figma designs 🎨",
-      "flowchart done ✍️",
-      "orientation day! 🌸 ",
-      "hotel event!! 🎉",
-    ],
-    photos: [scrap1_a, scrap1_b, scrap1_c, scrap1_d, scrap1_e],
+    captions: ["my name plate! ▬", "figma designs 🎨", "flowchart done ✍️", "first day! 🌸 ", "uniform 🥼", "hotel event! 🎤", "unify 🪴 ", "🍛"],
+    photos: [scrap1_a, scrap1_b, scrap1_c, scrap1_d, scrap1_e, scrap1_f, scrap1_g, scrap1_h],
   },
   {
     id: 2,
@@ -225,17 +191,8 @@ const GALLERY_ITEMS = [
     tag: "Locker Key · Food Stubs · Hotel Grooming",
     theme: "food",
     sticker: "♡",
-    captions: [
-        "my locker key! 🔑",
-        "adobo 🍖",
-        "yumm 🥪",
-        "food stub!",
-        "lumpiaa ✨",
-        "daily meal 🍽️",
-        "more food stubs 😍",
-        "cakee ♡",
-        "grateful 🙏",
-      ], photos: [food_a, food_b, food_c, food_d, food_e, food6, food7, food8, food9],
+    captions: ["my locker key! 🔑", "adobo 🍖", "yumm 🥪", "food stub!", "lumpiaa ✨", "daily meal 🍽️", "more food stubs 😍", "cakee ♡", "grateful 🙏"],
+    photos: [food_a, food_b, food_c, food_d, food_e, food6, food7, food8, food9],
   },
   {
     id: 3,
@@ -247,13 +204,7 @@ const GALLERY_ITEMS = [
     tag: "Laravel · REST API · MySQL · WebSocket · Docker",
     theme: "tasks",
     sticker: "✿",
-    captions: [
-      "Laravel + React 💻",
-      "REST API done ✓",
-      "MySQL wired 🗄️",
-      "WebSocket ⚡",
-      "Docker deploy 🐳",
-    ],
+    captions: ["REST API done ✓", "Laravel + React 💻", "MySQL wired 🗄️", "WebSocket ⚡", "Docker deploy 🐳"],
     photos: [task_a, task_b, task_c, task_d],
   },
   {
@@ -266,13 +217,7 @@ const GALLERY_ITEMS = [
     tag: "Bellesoft · Teamwork · Good Vibes Only",
     theme: "team",
     sticker: "★",
-    captions: [
-      "🤍",
-      "first group pic ✦",
-      "food trip 🍔",
-      "with Ma'am Jane 😊",
-      "with Sir Teddy & Ma'am Jane ✿",
-    ],
+    captions: ["first group pic ✦", "🤍", "food trip 🍔", "with the team 😊"],
     photos: [team_a, team_b, team_c, team_d],
   },
 ];
@@ -306,7 +251,6 @@ body {
 }
 ::selection { background: var(--primary-light); }
 
-/* ── Animations ── */
 @keyframes fadeUp   { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
 @keyframes fadeLeft { from { opacity:0; transform:translateX(-28px); } to { opacity:1; transform:translateX(0); } }
 @keyframes scaleIn  { from { opacity:0; transform:scale(0.88) rotate(4deg); } to { opacity:1; transform:scale(1) rotate(0deg); } }
@@ -319,7 +263,6 @@ body {
 .anim-fade-left{ animation: fadeLeft .8s ease both; }
 .anim-scale-in { animation: scaleIn 1s cubic-bezier(.2,1.2,.4,1) both; }
 
-/* ── Glass Nav ── */
 .glass-nav {
   background: rgba(253,248,245,.9);
   backdrop-filter: blur(18px);
@@ -327,7 +270,6 @@ body {
   box-shadow: 0 2px 20px rgba(193,124,116,.08);
 }
 
-/* ── HEADER ── */
 .site-header {
   position: fixed; top:0; left:0; right:0;
   z-index: 50;
@@ -380,7 +322,6 @@ body {
 .mobile-menu nav a { font-family:'Dancing Script',cursive; font-size:2.2rem; color:rgba(45,31,26,.65); text-decoration:none; }
 .mobile-menu-top { display:flex; justify-content:space-between; align-items:center; }
 
-/* ── HERO ── */
 .hero {
   padding-top:clamp(100px,14vw,140px); padding-bottom:clamp(48px,8vw,96px);
   max-width:1200px; margin:0 auto;
@@ -445,7 +386,6 @@ body {
   opacity:.6; top:10px; left:-30px; z-index:0;
 }
 
-/* ── WEEKLY BLOG SECTION ── */
 .works-section {
   padding:clamp(40px,7vw,96px) 0;
   max-width:1200px; margin:0 auto;
@@ -459,7 +399,6 @@ body {
   font-size:clamp(1.8rem,3.5vw,2.8rem); color:var(--text);
 }
 
-/* ── Carousel ── */
 .slider-container { position:relative; }
 .slider-arrow {
   position:absolute; top:42%; transform:translateY(-50%);
@@ -493,7 +432,6 @@ body {
   will-change:transform;
 }
 
-/* ── Post Card ── */
 .post-card {
   flex:0 0 clamp(240px,27vw,320px);
   background:white; border-radius:var(--radius); padding:20px;
@@ -552,7 +490,6 @@ body {
   font-weight:700; letter-spacing:.5px; color:var(--text);
 }
 
-/* ── MODAL BACKDROP ── */
 .modal-backdrop {
   position: fixed;
   top: 0; left: 0;
@@ -569,7 +506,6 @@ body {
   overflow: hidden;
 }
 
-/* ── MODAL BOX ── */
 .modal-box {
   background: var(--bg);
   border-radius: 24px;
@@ -679,7 +615,6 @@ body {
   font-family:'Lato',sans-serif;
 }
 
-/* ── VIDEO / JOURNEY SECTION ── */
 .video-section {
   padding:clamp(40px,7vw,96px) clamp(16px,4vw,40px);
   background:rgba(255,255,255,.55); backdrop-filter:blur(12px);
@@ -700,7 +635,6 @@ body {
   position:relative; z-index:2;
 }
 
-/* ══ THREE VIDEO STRIP ═══════════════════════════════════════════ */
 .three-video-strip {
   display: flex;
   align-items: center;
@@ -711,7 +645,6 @@ body {
   margin-bottom: 0;
 }
 
-/* ── SIDE POLAROID ── */
 @keyframes floatPolaroidL { 0%,100%{transform:rotate(-6deg) translateY(0)} 50%{transform:rotate(-6deg) translateY(-10px)} }
 @keyframes floatPolaroidR { 0%,100%{transform:rotate(5deg) translateY(0)} 50%{transform:rotate(5deg) translateY(-8px)} }
 @keyframes floatCenter    { 0%,100%{transform:translateY(0) rotate(-2deg)} 50%{transform:translateY(-12px) rotate(-2deg)} }
@@ -814,7 +747,6 @@ body {
   z-index: 3;
 }
 
-/* ── CENTER FILM STRIP ── */
 .center-film-wrap {
   animation: floatCenter 5s ease-in-out 0.5s infinite;
   position: relative;
@@ -965,9 +897,6 @@ body {
 .video-btn:hover { transform:translateY(-4px) scale(1.03); box-shadow:0 14px 40px rgba(193,124,116,.5); }
 .video-btn:active { transform:scale(.97); }
 
-/* ══════════════════════════════════════════════════════
-   VIDEO SECTION STICKERS
-══════════════════════════════════════════════════════ */
 @keyframes vsFloat1 { 0%,100%{transform:translateY(0) rotate(-14deg)} 50%{transform:translateY(-8px) rotate(-14deg)} }
 @keyframes vsFloat2 { 0%,100%{transform:translateY(0) rotate(10deg)} 50%{transform:translateY(-10px) rotate(10deg)} }
 @keyframes vsFloat3 { 0%,100%{transform:translateY(0) rotate(-6deg)} 50%{transform:translateY(-6px) rotate(-6deg)} }
@@ -982,19 +911,10 @@ body {
 @keyframes vsTwinkle { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.45;transform:scale(.75)} }
 
 .vs-sticker {
-  position:absolute;
-  pointer-events:none;
-  user-select:none;
-  line-height:1;
-  animation: vsStickerPop .65s cubic-bezier(.22,1,.36,1) both;
-  z-index:1;
+  position:absolute; pointer-events:none; user-select:none; line-height:1;
+  animation: vsStickerPop .65s cubic-bezier(.22,1,.36,1) both; z-index:1;
 }
-.vs-svg-sticker {
-  position:absolute;
-  pointer-events:none;
-  user-select:none;
-  z-index:1;
-}
+.vs-svg-sticker { position:absolute; pointer-events:none; user-select:none; z-index:1; }
 .vs-s-l1 { left:28px; top:12%; font-size:32px; animation-name:vsStickerPop,vsFloat1; animation-duration:.65s,4.2s; animation-delay:.1s,.75s; animation-fill-mode:both,none; animation-iteration-count:1,infinite; animation-timing-function:cubic-bezier(.22,1,.36,1),ease-in-out; }
 .vs-s-l2 { left:12px; top:32%; font-size:26px; animation-name:vsStickerPop,vsFloat2; animation-duration:.65s,5s; animation-delay:.22s,.88s; animation-fill-mode:both,none; animation-iteration-count:1,infinite; animation-timing-function:cubic-bezier(.22,1,.36,1),ease-in-out; }
 .vs-s-l3 { left:46px; top:52%; font-size:24px; animation-name:vsStickerPop,vsFloat3; animation-duration:.65s,3.8s; animation-delay:.36s,1s; animation-fill-mode:both,none; animation-iteration-count:1,infinite; animation-timing-function:cubic-bezier(.22,1,.36,1),ease-in-out; }
@@ -1026,7 +946,7 @@ body {
 }
 
 /* ══════════════════════════════════════════════════════
-   SCRAPBOOK — KEYFRAMES
+   SCRAPBOOK KEYFRAMES
 ══════════════════════════════════════════════════════ */
 @keyframes sbPageSlide  { from { opacity:0; transform:translateY(60px) scale(.97); } to { opacity:1; transform:translateY(0) scale(1); } }
 @keyframes sbJournalIn  { from { opacity:0; transform:translateX(-40px) rotate(-1deg); } to { opacity:1; transform:translateX(0) rotate(0deg); } }
@@ -1041,7 +961,7 @@ body {
 @keyframes numPop       { 0%{ opacity:0; transform:scale(2.5); } 100%{ opacity:1; transform:scale(1); } }
 
 /* ══════════════════════════════════════════════════════
-   SCRAPBOOK — SECTION WRAPPER
+   SCRAPBOOK SECTION
 ══════════════════════════════════════════════════════ */
 .scrapbook-section {
   padding: clamp(48px,8vw,100px) 0;
@@ -1074,17 +994,21 @@ body {
 .scrapbook-header.header-visible h2::after { width: 100%; }
 
 /* ══════════════════════════════════════════════════════
-   SCRAPBOOK — PAGE GRID
+   SCRAPBOOK PAGE GRID — KEY FIX:
+   overflow:visible on page so floating photos never clip;
+   collage column uses minmax so it never overflows the row.
 ══════════════════════════════════════════════════════ */
 .scrapbook-page {
   max-width: 1200px; margin: 0 auto;
   padding: 0 clamp(16px,4vw,40px);
   margin-bottom: clamp(72px,11vw,130px);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr minmax(0, 1fr);
   gap: clamp(32px,5vw,64px);
   align-items: center;
   opacity: 0;
+  /* Do NOT clip — let polaroid photos breathe with their rotations */
+  overflow: visible;
 }
 .scrapbook-page.visible {
   animation: sbPageSlide .8s cubic-bezier(.22,1,.36,1) both;
@@ -1098,7 +1022,7 @@ body {
 }
 
 /* ══════════════════════════════════════════════════════
-   SCRAPBOOK — JOURNAL (text side)
+   SCRAPBOOK JOURNAL
 ══════════════════════════════════════════════════════ */
 .scrapbook-journal {
   padding: clamp(22px,3vw,38px);
@@ -1213,16 +1137,20 @@ body {
 }
 
 /* ══════════════════════════════════════════════════════
-   SCRAPBOOK — COLLAGE (photo side)
-   Standard layout: 5 photos in 2 rows
-   Food layout: dynamic grid of all photos
+   SCRAPBOOK COLLAGE — wrapper
+   KEY FIX: use padding-based approach so the collage
+   column has a defined width but photos can rotate freely.
+   We set position:relative and a min-height; photos use
+   percentage or fixed px that fit within ~460px natural width.
 ══════════════════════════════════════════════════════ */
 .scrapbook-collage {
   position: relative;
-  width: 460px;
-  max-width: 100%;
-  height: 560px;
+  width: 100%;
+  max-width: 460px;
+  height: 400px;
   overflow: visible;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 /* ── Food grid collage override ── */
@@ -1236,6 +1164,7 @@ body {
   padding: 14px 0 24px;
 }
 
+/* ══ PHOTO BASE — sizes scaled to fit 460px container ══ */
 .sc-photo {
   position: absolute;
   background: white;
@@ -1261,7 +1190,7 @@ body {
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
-/* ── Food grid photo card (non-absolute) ── */
+/* ── Food grid photo card ── */
 .sc-food-photo {
   position: relative;
   background: white;
@@ -1341,97 +1270,184 @@ body {
 }
 .sc-sticker:hover { animation: stickerWobble .5s ease both; }
 
-/* ── ROW 1: LEFT ── */
+/* ══ ROW 1 — 3 photos across top (scaled for 460px container) ══ */
 .sc-sub1 {
-  width: 146px;
-  top: 10px; left: 0px;
+  width: 136px;
+  top: 10px; left: 2px;
   transform: rotate(3.5deg);
   --r: 3.5deg; z-index: 2;
 }
-.sc-sub1 img { width: 130px; height: 100px; }
+.sc-sub1 img { width: 120px; height: 92px; }
 .scrapbook-page.visible .sc-sub1 {
   animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .45s both, photoFloat 6.2s ease-in-out 1.5s infinite;
 }
 
-/* ── ROW 1: CENTER (main) ── */
 .sc-main {
-  width: 146px;
-  top: 0px; left: 157px;
+  width: 136px;
+  top: 0px; left: 148px;
   transform: rotate(-2deg);
   --r: -2deg; z-index: 3;
 }
-.sc-main img { width: 130px; height: 106px; }
+.sc-main img { width: 120px; height: 98px; }
 .scrapbook-page.visible .sc-main {
   animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .3s both, photoFloat 5.5s ease-in-out 1.2s infinite;
 }
 
-/* ── ROW 1: RIGHT ── */
 .sc-sub2 {
-  width: 146px;
-  top: 10px; left: 314px;
+  width: 136px;
+  top: 10px; left: 294px;
   transform: rotate(-3.5deg);
   --r: -3.5deg; z-index: 2;
 }
-.sc-sub2 img { width: 130px; height: 100px; }
+.sc-sub2 img { width: 120px; height: 92px; }
 .scrapbook-page.visible .sc-sub2 {
   animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .6s both, photoFloat 4.8s ease-in-out 1.8s infinite;
 }
 
-/* ── ROW 2: BOTTOM LEFT ── */
+/* ══ ROW 2 — 2 wide photos below ══ */
 .sc-sub3 {
-  width: 220px;
-  top: 195px; left: 0px;
+  width: 206px;
+  top: 200px; left: 2px;
   transform: rotate(-2.5deg);
   --r: -2.5deg; z-index: 2;
 }
-.sc-sub3 img { width: 204px; height: 148px; }
+.sc-sub3 img { width: 190px; height: 138px; }
 .scrapbook-page.visible .sc-sub3 {
   animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .75s both, photoFloat 5.8s ease-in-out 2s infinite;
 }
 
-/* ── ROW 2: BOTTOM RIGHT ── */
 .sc-sub4 {
-  width: 220px;
-  top: 200px; left: 240px;
+  width: 206px;
+  top: 205px; left: 224px;
   transform: rotate(2.5deg);
   --r: 2.5deg; z-index: 2;
 }
-.sc-sub4 img { width: 204px; height: 148px; }
+.sc-sub4 img { width: 190px; height: 138px; }
 .scrapbook-page.visible .sc-sub4 {
   animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .9s both, photoFloat 6.5s ease-in-out 2.2s infinite;
 }
 
 /* ── Tape positions ── */
-.sc-tape-1 { top:-7px; left:157px; transform:rotate(-4deg); animation-delay:.1s; }
+.sc-tape-1 { top:-7px; left:148px; transform:rotate(-4deg); animation-delay:.1s; }
 .sc-tape-2 { top:-7px; left:10px;  transform:rotate(5deg);  animation-delay:.4s; }
-.sc-tape-3 { top:-7px; left:324px; transform:rotate(-7deg); animation-delay:.7s; }
-.sc-tape-4 { top:188px; left:20px;  transform:rotate(3deg);  animation-delay:.5s; }
-.sc-tape-5 { top:193px; left:252px; transform:rotate(-5deg); animation-delay:.6s; }
+.sc-tape-3 { top:-7px; left:300px; transform:rotate(-7deg); animation-delay:.7s; }
+.sc-tape-4 { top:193px; left:14px;  transform:rotate(3deg);  animation-delay:.5s; }
+.sc-tape-5 { top:198px; left:236px; transform:rotate(-5deg); animation-delay:.6s; }
 
-.sc-sticker-1 { top: 178px; left: 50%; transform: translateX(-50%); }
+.sc-sticker-1 { top: 183px; left: 50%; transform: translateX(-50%); }
 .sc-sticker-2 { top: 8px; right: -14px; font-size:1rem; }
 .scrapbook-page.visible .sc-sticker-1 { animation: stickerIn .6s cubic-bezier(.22,1,.36,1) 1s both; }
 .scrapbook-page.visible .sc-sticker-2 { animation: stickerIn .6s cubic-bezier(.22,1,.36,1) 1.2s both; }
 
-@media(max-width:768px){
-  .scrapbook-collage { width: 320px; height: 420px; }
-  .scrapbook-collage.food-grid { height: auto; min-height: 320px; }
-  .sc-sub1  { width:104px; top:8px;  left:0px;   } .sc-sub1 img  { width:88px; height:72px; }
-  .sc-main  { width:104px; top:0px;  left:108px; } .sc-main img  { width:88px; height:76px; }
-  .sc-sub2  { width:104px; top:8px;  left:216px; } .sc-sub2 img  { width:88px; height:72px; }
-  .sc-sub3  { width:154px; top:142px; left:0px;  } .sc-sub3 img  { width:138px; height:106px; }
-  .sc-sub4  { width:154px; top:146px; left:166px;} .sc-sub4 img  { width:138px; height:106px; }
-  .sc-tape-1 { left:108px; }
-  .sc-tape-3 { left:220px; }
-  .sc-tape-4 { top:135px; left:14px; }
-  .sc-tape-5 { top:139px; left:174px; }
-  .sc-sticker-1 { top:132px; }
-  .sc-sticker-2 { right:0px; }
-  .sc-food-photo img { width: 76px; height: 62px; }
-  .sc-food-photo-caption { max-width: 76px; }
+/* ══ FOUR-PHOTO collage — team layout (3 top + 1 centered bottom) ══ */
+.sc-team-sub1 {
+  width: 136px;
+  top: 10px; left: 2px;
+  transform: rotate(3.5deg);
+  --r: 3.5deg; z-index: 2;
+}
+.sc-team-sub1 img { width: 120px; height: 92px; }
+.scrapbook-page.visible .sc-team-sub1 {
+  animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .45s both, photoFloat 6.2s ease-in-out 1.5s infinite;
 }
 
-/* ── FOOTER ── */
+.sc-team-main {
+  width: 136px;
+  top: 0px; left: 148px;
+  transform: rotate(-2deg);
+  --r: -2deg; z-index: 3;
+}
+.sc-team-main img { width: 120px; height: 98px; }
+.scrapbook-page.visible .sc-team-main {
+  animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .3s both, photoFloat 5.5s ease-in-out 1.2s infinite;
+}
+
+.sc-team-sub2 {
+  width: 136px;
+  top: 10px; left: 294px;
+  transform: rotate(-3.5deg);
+  --r: -3.5deg; z-index: 2;
+}
+.sc-team-sub2 img { width: 120px; height: 92px; }
+.scrapbook-page.visible .sc-team-sub2 {
+  animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .6s both, photoFloat 4.8s ease-in-out 1.8s infinite;
+}
+
+.sc-team-sub3 {
+  width: 206px;
+  top: 200px; left: 112px;
+  transform: rotate(-1.5deg);
+  --r: -1.5deg; z-index: 2;
+}
+.sc-team-sub3 img { width: 190px; height: 138px; }
+.scrapbook-page.visible .sc-team-sub3 {
+  animation: photoDrop .7s cubic-bezier(.22,1,.36,1) .75s both, photoFloat 5.8s ease-in-out 2s infinite;
+}
+
+.sc-team-tape-1 { top:-7px; left:148px; transform:rotate(-4deg); animation-delay:.1s; }
+.sc-team-tape-2 { top:-7px; left:10px;  transform:rotate(5deg);  animation-delay:.4s; }
+.sc-team-tape-3 { top:-7px; left:300px; transform:rotate(-7deg); animation-delay:.7s; }
+.sc-team-tape-4 { top:193px; left:162px; transform:rotate(3deg); animation-delay:.5s; }
+
+.sc-team-sticker  { top: 183px; left: 50%; transform: translateX(-50%); }
+.sc-team-sticker2 { top: 8px; right: -14px; font-size:1rem; }
+.scrapbook-page.visible .sc-team-sticker  { animation: stickerIn .6s cubic-bezier(.22,1,.36,1) 1s both; }
+.scrapbook-page.visible .sc-team-sticker2 { animation: stickerIn .6s cubic-bezier(.22,1,.36,1) 1.2s both; }
+
+/* team collage container height */
+.scrapbook-collage.team-collage {
+  height: 390px;
+}
+
+/* ══ STANDARD 8-PHOTO COLLAGE extra rows ══ */
+.sc-sub5 { width: 136px; top: 360px; left: 2px; transform: rotate(-1.8deg); --r: -1.8deg; z-index: 2; }
+.sc-sub5 img { width: 120px; height: 92px; }
+.sc-sub6 { width: 136px; top: 355px; left: 148px; transform: rotate(1.8deg); --r: 1.8deg; z-index: 2; }
+.sc-sub6 img { width: 120px; height: 92px; }
+.sc-sub7 { width: 136px; top: 362px; left: 294px; transform: rotate(2.2deg); --r: 2.2deg; z-index: 2; }
+.sc-sub7 img { width: 120px; height: 92px; }
+
+.scrapbook-page.visible .sc-sub5 { animation: photoDrop .7s cubic-bezier(.22,1,.36,1) 1.05s both, photoFloat 5.8s ease-in-out 2.2s infinite; }
+.scrapbook-page.visible .sc-sub6 { animation: photoDrop .7s cubic-bezier(.22,1,.36,1) 1.2s both, photoFloat 6.1s ease-in-out 2.4s infinite; }
+.scrapbook-page.visible .sc-sub7 { animation: photoDrop .7s cubic-bezier(.22,1,.36,1) 1.35s both, photoFloat 5.4s ease-in-out 2.6s infinite; }
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:900px){
+  .scrapbook-collage { max-width: 340px; }
+  .sc-sub1  { width:106px; top:8px;  left:2px;   } .sc-sub1 img  { width:90px; height:72px; }
+  .sc-main  { width:106px; top:0px;  left:112px; } .sc-main img  { width:90px; height:78px; }
+  .sc-sub2  { width:106px; top:8px;  left:222px; } .sc-sub2 img  { width:90px; height:72px; }
+  .sc-sub3  { width:158px; top:175px; left:2px;  } .sc-sub3 img  { width:142px; height:108px; }
+  .sc-sub4  { width:158px; top:180px; left:170px;} .sc-sub4 img  { width:142px; height:108px; }
+  .sc-tape-1 { left:112px; }
+  .sc-tape-3 { left:226px; }
+  .sc-tape-4 { top:168px; left:14px; }
+  .sc-tape-5 { top:173px; left:178px; }
+  .sc-sticker-1 { top:160px; }
+  .sc-sub5 { width:106px; top:310px; left:2px; }   .sc-sub5 img { width:90px; height:72px; }
+  .sc-sub6 { width:106px; top:305px; left:112px; } .sc-sub6 img { width:90px; height:72px; }
+  .sc-sub7 { width:106px; top:312px; left:222px; } .sc-sub7 img { width:90px; height:72px; }
+  .sc-team-sub1 { width:106px; top:8px; left:2px; }    .sc-team-sub1 img { width:90px; height:72px; }
+  .sc-team-main { width:106px; top:0px; left:112px; }  .sc-team-main img { width:90px; height:78px; }
+  .sc-team-sub2 { width:106px; top:8px; left:222px; }  .sc-team-sub2 img { width:90px; height:72px; }
+  .sc-team-sub3 { width:158px; top:175px; left:91px; } .sc-team-sub3 img { width:142px; height:108px; }
+  .sc-team-tape-1 { left:112px; }
+  .sc-team-tape-3 { left:226px; }
+  .sc-team-tape-4 { top:168px; left:138px; }
+  .sc-team-sticker { top:160px; }
+  .scrapbook-collage.team-collage { height:320px; }
+  .sc-food-photo img { width: 80px; height: 64px; }
+  .sc-food-photo-caption { max-width: 80px; }
+}
+
+@media(max-width:768px){
+  .scrapbook-page {
+    grid-template-columns: 1fr;
+    padding: 0 clamp(16px,4vw,32px);
+  }
+  .scrapbook-collage { margin-bottom: 20px; }
+}
+
 .footer {
   padding:clamp(48px,7vw,96px) clamp(16px,4vw,40px) clamp(28px,4vw,48px);
   text-align:center;
@@ -1447,7 +1463,6 @@ body {
 .footer-socials a:hover { transform:translateY(-3px); }
 .footer-copy { font-family:'Dancing Script',cursive; font-size:.9rem; color:var(--muted); }
 
-/* ── RESPONSIVE ── */
 @media(max-width:768px){
   .hero { grid-template-columns:1fr; }
   .hero-img-wrap { display:none; }
@@ -1461,15 +1476,12 @@ body {
   .slider-arrow.right { right:4px; }
   .modal-box { border-radius:18px; }
   .modal-header { border-radius:18px 18px 0 0; }
-  .scrapbook-page { grid-template-columns:1fr; }
-  .scrapbook-collage { min-height:380px; margin-bottom:16px; }
 }
 @media(min-width:769px) and (max-width:1023px){
   .post-card { flex:0 0 clamp(240px,38vw,300px); }
   .slider-outer { padding:20px 64px 28px; }
 }
 
-/* ── PAGE WRAPPER ── */
 #root, #app { display:flex; flex-direction:column; align-items:center; width:100%; }
 .page-wrap { width:100%; max-width:1440px; margin:0 auto; overflow-x:hidden; }
 .page-center { max-width:1200px; margin:0 auto; padding:0 clamp(16px,4vw,40px); width:100%; }
@@ -1491,7 +1503,6 @@ const IconCamera  = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="
 const IconSparkle = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>;
 const IconInsta   = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>;
 
-// ── WASHI TAPE SVG ────────────────────────────────────────────────────────────
 const WashiTape = () => (
   <svg width="56" height="20" viewBox="0 0 56 20">
     <rect x="0" y="0" width="56" height="20" rx="3" fill="rgba(255,200,170,0.72)"/>
@@ -1501,14 +1512,9 @@ const WashiTape = () => (
   </svg>
 );
 
-// ── SPARKLE SVG ───────────────────────────────────────────────────────────────
 const SparkleSvg = ({ size = 24, opacity = 0.85 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24">
-    <path
-      d="M12 2L13.5 9.5L21 11L13.5 12.5L12 20L10.5 12.5L3 11L10.5 9.5Z"
-      fill="#c17c74"
-      opacity={opacity}
-    />
+    <path d="M12 2L13.5 9.5L21 11L13.5 12.5L12 20L10.5 12.5L3 11L10.5 9.5Z" fill="#c17c74" opacity={opacity}/>
   </svg>
 );
 
@@ -1760,7 +1766,6 @@ function WeeklyBlog({ posts }) {
 }
 
 // ── SCRAPBOOK PAGE ────────────────────────────────────────────────────────────
-const SCRAPBOOK_STICKERS = ["♡", "✦", "✿", "★", "✈"];
 const SCRAPBOOK_CAPTIONS = [
   ["First day! ✨", "Locker key! 🏷🔑️", "Flowcharts ✍️", "Orientation~", "UI/UX start 🎨"],
   ["Landing page 🖥️", "All venues!", "Admin side ✨", "Seat map 🗺️", "Fixed bugs 🐛"],
@@ -1768,22 +1773,13 @@ const SCRAPBOOK_CAPTIONS = [
   ["WebSockets! ⚡", "Notifs 🔔", "Responsive!", "Pagination 📄", "Real-time ✓"],
   ["Paginate ✓", "Auto-delete!", "Code split 🔧", "Optimized 🚀", "Week done! 🎉"],
 ];
-
-// Rotation angles for polaroid tilt — varied per slot
+const SCRAPBOOK_STICKERS = ["♡", "✦", "✿", "★", "✈"];
 const PHOTO_ROTS = [3.5, -2, -3.5, 2.2, -1.8, 3.1, -2.8, 1.6, -3.2, 2.7, -1.2, 3.4];
-// Filter styles cycling per photo for visual variety
 const PHOTO_FILTERS = [
-  "none",
-  "sepia(30%) brightness(1.05)",
-  "grayscale(25%) contrast(1.07)",
-  "brightness(1.06) saturate(1.1)",
-  "none",
-  "sepia(20%) brightness(1.04)",
-  "grayscale(30%) contrast(1.05)",
-  "brightness(1.08) saturate(1.08)",
-  "none",
-  "sepia(25%) brightness(1.03)",
-  "grayscale(20%) contrast(1.06)",
+  "none", "sepia(30%) brightness(1.05)", "grayscale(25%) contrast(1.07)",
+  "brightness(1.06) saturate(1.1)", "none", "sepia(20%) brightness(1.04)",
+  "grayscale(30%) contrast(1.05)", "brightness(1.08) saturate(1.08)",
+  "none", "sepia(25%) brightness(1.03)", "grayscale(20%) contrast(1.06)",
   "brightness(1.05) saturate(1.12)",
 ];
 
@@ -1802,12 +1798,11 @@ function ScrapbookPage({ item, index }) {
     return () => obs.disconnect();
   }, []);
 
-  // Use item.captions if available, otherwise fall back to SCRAPBOOK_CAPTIONS
   const caps = item.captions || SCRAPBOOK_CAPTIONS[index] || ["memory ♡", "this week~", "progress!", "learning 📚"];
   const sticker = item.sticker || SCRAPBOOK_STICKERS[index % SCRAPBOOK_STICKERS.length];
-
-  // Use item.photos if provided, otherwise fall back to SCRAP_IMGS offset
   const isFood = item.theme === "food";
+  const isTeam = item.theme === "team";
+
   const photos = item.photos && item.photos.length > 0
     ? item.photos
     : [
@@ -1818,57 +1813,34 @@ function ScrapbookPage({ item, index }) {
         SCRAP_IMGS[(index + 4) % SCRAP_IMGS.length],
       ];
 
-  // ── FOOD GRID COLLAGE (all 12 photos in a wrap grid) ──────────────────────
+  // ── FOOD GRID COLLAGE ─────────────────────────────────────────────────────
   const foodCollage = (
     <div className="scrapbook-collage food-grid">
       {photos.map((photo, pi) => {
         const rot = PHOTO_ROTS[pi % PHOTO_ROTS.length];
         const filter = PHOTO_FILTERS[pi % PHOTO_FILTERS.length];
         return (
-          <div
-            key={pi}
-            className="sc-food-photo"
-            style={{ transform: `rotate(${rot}deg)` }}
-            onMouseEnter={e => {
-              e.currentTarget.style.transform = `rotate(0deg) scale(1.08)`;
-              e.currentTarget.style.zIndex = "20";
-              e.currentTarget.style.boxShadow = "0 20px 52px rgba(45,31,26,.26)";
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.transform = `rotate(${rot}deg)`;
-              e.currentTarget.style.zIndex = "";
-              e.currentTarget.style.boxShadow = "";
-            }}
+          <div key={pi} className="sc-food-photo" style={{ transform: `rotate(${rot}deg)` }}
+            onMouseEnter={e => { e.currentTarget.style.transform = `rotate(0deg) scale(1.08)`; e.currentTarget.style.zIndex = "20"; e.currentTarget.style.boxShadow = "0 20px 52px rgba(45,31,26,.26)"; }}
+            onMouseLeave={e => { e.currentTarget.style.transform = `rotate(${rot}deg)`; e.currentTarget.style.zIndex = ""; e.currentTarget.style.boxShadow = ""; }}
           >
-            {/* washi tape on each photo */}
             <div className="sc-food-tape" />
-            <img
-              src={photo}
-              alt={caps[pi] || `photo ${pi + 1}`}
-              style={{ filter }}
+            <img src={photo} alt={caps[pi] || `photo ${pi + 1}`} style={{ filter }}
               onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
             />
-            <div className="sc-food-photo-caption">
-              {caps[pi] || "♡"}
-            </div>
+            <div className="sc-food-photo-caption">{caps[pi] || "♡"}</div>
           </div>
         );
       })}
-      {/* Bottom sticker row */}
       <div className="sc-food-sticker-row">
         {["♡", "✦", "✿", "♡", "✦"].map((s, i) => (
-          <span key={i} style={{
-            fontSize: "1.1rem",
-            color: "var(--primary)",
-            opacity: 0.5 + (i % 2) * 0.3,
-            animation: `floatSticker ${3.5 + i * 0.4}s ease-in-out ${i * 0.3}s infinite`,
-          }}>{s}</span>
+          <span key={i} style={{ fontSize:"1.1rem", color:"var(--primary)", opacity: 0.5 + (i % 2) * 0.3, animation:`floatSticker ${3.5 + i * 0.4}s ease-in-out ${i * 0.3}s infinite` }}>{s}</span>
         ))}
       </div>
     </div>
   );
 
-  // ── STANDARD 5-PHOTO COLLAGE ───────────────────────────────────────────────
+  // ── 3D TILT STATE ─────────────────────────────────────────────────────────
   const [tilt, setTilt] = useState({});
   const handleMouseMove = (e, baseRot) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -1879,10 +1851,68 @@ function ScrapbookPage({ item, index }) {
   const handleMouseLeave = () => setTilt({});
   const tiltStyle = (baseRot) =>
     tilt.base === baseRot && Object.keys(tilt).length > 0
-      ? { transform: `perspective(600px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg) rotate(${baseRot}deg) scale(1.07)`, transition: "transform .1s ease", zIndex: 20 }
+      ? { transform: `perspective(600px) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg) rotate(${baseRot}deg) scale(1.07)`, transition:"transform .1s ease", zIndex:20 }
       : {};
 
-  const standardCollage = (
+  // ── FOUR-PHOTO COLLAGE (team: 3 top + 1 centered bottom) ─────────────────
+  const fourPhotoCollage = (
+    <div className="scrapbook-collage team-collage">
+      <div className="sc-tape sc-team-tape-1" />
+      <div className="sc-tape sc-team-tape-2" />
+      <div className="sc-tape sc-team-tape-3" />
+      <div className="sc-tape sc-team-tape-4" />
+
+      <div className="sc-photo sc-team-sub1"
+        onMouseMove={e => handleMouseMove(e, "3.5deg")}
+        onMouseLeave={handleMouseLeave}
+        style={tiltStyle("3.5deg")}
+      >
+        <img src={photos[1]} alt={item.label} style={{ filter:"sepia(35%) brightness(1.06)" }}
+          onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
+        />
+        <div className="sc-photo-caption">{caps[1]}</div>
+      </div>
+
+      <div className="sc-photo sc-team-main"
+        onMouseMove={e => handleMouseMove(e, "-2deg")}
+        onMouseLeave={handleMouseLeave}
+        style={tiltStyle("-2deg")}
+      >
+        <img src={photos[0]} alt={item.label}
+          onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
+        />
+        <div className="sc-photo-caption">{caps[0]}</div>
+      </div>
+
+      <div className="sc-photo sc-team-sub2"
+        onMouseMove={e => handleMouseMove(e, "-3.5deg")}
+        onMouseLeave={handleMouseLeave}
+        style={tiltStyle("-3.5deg")}
+      >
+        <img src={photos[2]} alt={item.label} style={{ filter:"grayscale(45%) contrast(1.08)" }}
+          onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
+        />
+        <div className="sc-photo-caption">{caps[2]}</div>
+      </div>
+
+      <div className="sc-photo sc-team-sub3"
+        onMouseMove={e => handleMouseMove(e, "-1.5deg")}
+        onMouseLeave={handleMouseLeave}
+        style={tiltStyle("-1.5deg")}
+      >
+        <img src={photos[3]} alt={item.label} style={{ filter:"brightness(1.04) saturate(1.1)" }}
+          onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
+        />
+        <div className="sc-photo-caption">{caps[3]}</div>
+      </div>
+
+      <div className="sc-sticker sc-team-sticker">{sticker}</div>
+      <div className="sc-sticker sc-team-sticker2">✦</div>
+    </div>
+  );
+
+  // ── FIVE-PHOTO COLLAGE (tasks: 3 top + 2 bottom) ─────────────────────────
+  const fivePhotoCollage = (
     <div className="scrapbook-collage">
       <div className="sc-tape sc-tape-1" />
       <div className="sc-tape sc-tape-2" />
@@ -1890,20 +1920,17 @@ function ScrapbookPage({ item, index }) {
       <div className="sc-tape sc-tape-4" />
       <div className="sc-tape sc-tape-5" />
 
-      {/* ROW 1: left */}
       <div className="sc-photo sc-sub1"
         onMouseMove={e => handleMouseMove(e, "3.5deg")}
         onMouseLeave={handleMouseLeave}
         style={tiltStyle("3.5deg")}
       >
-        <img src={photos[1]} alt={item.label}
-          style={{ filter: "sepia(35%) brightness(1.06)" }}
+        <img src={photos[1]} alt={item.label} style={{ filter:"sepia(35%) brightness(1.06)" }}
           onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
         />
         <div className="sc-photo-caption">{caps[1]}</div>
       </div>
 
-      {/* ROW 1: center (main) */}
       <div className="sc-photo sc-main"
         onMouseMove={e => handleMouseMove(e, "-2deg")}
         onMouseLeave={handleMouseLeave}
@@ -1915,40 +1942,34 @@ function ScrapbookPage({ item, index }) {
         <div className="sc-photo-caption">{caps[0]}</div>
       </div>
 
-      {/* ROW 1: right */}
       <div className="sc-photo sc-sub2"
         onMouseMove={e => handleMouseMove(e, "-3.5deg")}
         onMouseLeave={handleMouseLeave}
         style={tiltStyle("-3.5deg")}
       >
-        <img src={photos[2]} alt={item.label}
-          style={{ filter: "grayscale(45%) contrast(1.08)" }}
+        <img src={photos[2]} alt={item.label} style={{ filter:"grayscale(45%) contrast(1.08)" }}
           onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
         />
         <div className="sc-photo-caption">{caps[2]}</div>
       </div>
 
-      {/* ROW 2: bottom left */}
       <div className="sc-photo sc-sub3"
         onMouseMove={e => handleMouseMove(e, "-2.5deg")}
         onMouseLeave={handleMouseLeave}
         style={tiltStyle("-2.5deg")}
       >
-        <img src={photos[3]} alt={item.label}
-          style={{ filter: "brightness(1.04) saturate(1.1)" }}
+        <img src={photos[3]} alt={item.label} style={{ filter:"brightness(1.04) saturate(1.1)" }}
           onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
         />
         <div className="sc-photo-caption">{caps[3]}</div>
       </div>
 
-      {/* ROW 2: bottom right */}
       <div className="sc-photo sc-sub4"
         onMouseMove={e => handleMouseMove(e, "2.5deg")}
         onMouseLeave={handleMouseLeave}
         style={tiltStyle("2.5deg")}
       >
-        <img src={photos[4] || photos[0]} alt={item.label}
-          style={{ filter: "brightness(1.04) saturate(1.1)" }}
+        <img src={photos[0]} alt={item.label} style={{ filter:"sepia(20%) brightness(1.05)" }}
           onError={e => { e.target.src = "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}
         />
         <div className="sc-photo-caption">{caps[4] || caps[0]}</div>
@@ -1959,7 +1980,63 @@ function ScrapbookPage({ item, index }) {
     </div>
   );
 
-  const collage = isFood ? foodCollage : standardCollage;
+  // ── STANDARD 8-PHOTO COLLAGE ──────────────────────────────────────────────
+  const standardCollage = (
+    <div className="scrapbook-collage" style={{ height: "500px" }}>
+      <div className="sc-tape sc-tape-1" />
+      <div className="sc-tape sc-tape-2" />
+      <div className="sc-tape sc-tape-3" />
+      <div className="sc-tape sc-tape-4" />
+      <div className="sc-tape sc-tape-5" />
+
+      <div className="sc-photo sc-sub1" onMouseMove={e => handleMouseMove(e,"3.5deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("3.5deg")}>
+        <img src={photos[1]} alt={item.label} style={{ filter:"sepia(35%) brightness(1.06)" }} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[1]}</div>
+      </div>
+      <div className="sc-photo sc-main" onMouseMove={e => handleMouseMove(e,"-2deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("-2deg")}>
+        <img src={photos[0]} alt={item.label} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[0]}</div>
+      </div>
+      <div className="sc-photo sc-sub2" onMouseMove={e => handleMouseMove(e,"-3.5deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("-3.5deg")}>
+        <img src={photos[2]} alt={item.label} style={{ filter:"grayscale(45%) contrast(1.08)" }} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[2]}</div>
+      </div>
+      <div className="sc-photo sc-sub3" onMouseMove={e => handleMouseMove(e,"-2.5deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("-2.5deg")}>
+        <img src={photos[3]} alt={item.label} style={{ filter:"brightness(1.04) saturate(1.1)" }} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[3]}</div>
+      </div>
+      <div className="sc-photo sc-sub4" onMouseMove={e => handleMouseMove(e,"2.5deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("2.5deg")}>
+        <img src={photos[4]} alt={item.label} style={{ filter:"brightness(1.04) saturate(1.1)" }} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[4]}</div>
+      </div>
+      <div className="sc-photo sc-sub5" onMouseMove={e => handleMouseMove(e,"-1.8deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("-1.8deg")}>
+        <img src={photos[5]} alt={item.label} style={{ filter:"sepia(25%) brightness(1.03)" }} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[5] || caps[0]}</div>
+      </div>
+      <div className="sc-photo sc-sub6" onMouseMove={e => handleMouseMove(e,"1.8deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("1.8deg")}>
+        <img src={photos[6]} alt={item.label} style={{ filter:"grayscale(20%) contrast(1.06)" }} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[6] || caps[1]}</div>
+      </div>
+      <div className="sc-photo sc-sub7" onMouseMove={e => handleMouseMove(e,"2.2deg")} onMouseLeave={handleMouseLeave} style={tiltStyle("2.2deg")}>
+        <img src={photos[7]} alt={item.label} style={{ filter:"brightness(1.05) saturate(1.12)" }} onError={e => { e.target.src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&q=80"; }}/>
+        <div className="sc-photo-caption">{caps[7] || caps[2]}</div>
+      </div>
+      <div className="sc-sticker sc-sticker-1" style={{ top:"178px" }}>{sticker}</div>
+      <div className="sc-sticker sc-sticker-2">✦</div>
+    </div>
+  );
+
+  // ── Pick layout ───────────────────────────────────────────────────────────
+  let collage;
+  if (isFood) {
+    collage = foodCollage;
+  } else if (isTeam) {
+    collage = fourPhotoCollage;
+  } else if (photos.length <= 4) {
+    collage = fivePhotoCollage;
+  } else {
+    collage = standardCollage;
+  }
 
   const journal = (
     <div className="scrapbook-journal">
@@ -1983,7 +2060,7 @@ function ScrapbookPage({ item, index }) {
   );
 }
 
-// ── PHOTO GALLERY (Scrapbook) ─────────────────────────────────────────────────
+// ── PHOTO GALLERY ─────────────────────────────────────────────────────────────
 function PhotoGallery() {
   const headerRef = useRef(null);
   const [headerVisible, setHeaderVisible] = useState(false);
@@ -2002,8 +2079,9 @@ function PhotoGallery() {
   return (
     <section className="scrapbook-section">
       <div ref={headerRef} className={`scrapbook-header${headerVisible ? " header-visible" : ""}`}>
-        <div className="scrapbook-header-label" style={{fontSize: '1.7rem', fontWeight: 'bold'}}><IconSparkle /> Behind the Scenes <IconSparkle /></div>
-   
+        <div className="scrapbook-header-label" style={{ fontSize:"1.7rem", fontWeight:"bold" }}>
+          <IconSparkle /> Behind the Scenes <IconSparkle />
+        </div>
       </div>
       {GALLERY_ITEMS.map((item, i) => (
         <ScrapbookPage key={item.id} item={item} index={i} />
@@ -2012,7 +2090,7 @@ function PhotoGallery() {
   );
 }
 
-// ── SIDE POLAROID VIDEO PLAYER ────────────────────────────────────────────────
+// ── VIDEO PLAYERS ─────────────────────────────────────────────────────────────
 function SidePolaroidPlayer({ src, caption, wrapClass, badge }) {
   const videoRef = useRef(null);
   const [playing, setPlaying] = useState(false);
@@ -2028,19 +2106,10 @@ function SidePolaroidPlayer({ src, caption, wrapClass, badge }) {
     <div className={`side-polaroid-wrap ${wrapClass}`}>
       <div className="polaroid-tape" />
       <div className="side-polaroid" onClick={toggle}>
-        <video
-          ref={videoRef}
-          src={src}
-          muted
-          playsInline
-          preload="metadata"
-          onEnded={() => setPlaying(false)}
-        />
+        <video ref={videoRef} src={src} muted playsInline preload="metadata" onEnded={() => setPlaying(false)} />
         <div className={`side-play-overlay${playing ? " hidden" : ""}`}>
           <div className="side-play-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--primary)">
-              <polygon points="6 3 20 12 6 21 6 3" />
-            </svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--primary)"><polygon points="6 3 20 12 6 21 6 3"/></svg>
           </div>
         </div>
         <div className="polaroid-badge">{badge}</div>
@@ -2051,7 +2120,6 @@ function SidePolaroidPlayer({ src, caption, wrapClass, badge }) {
   );
 }
 
-// ── CENTER FILM STRIP PLAYER ──────────────────────────────────────────────────
 function FilmStripPlayer({ src }) {
   const videoRef = useRef(null);
   const [playing, setPlaying] = useState(false);
@@ -2068,38 +2136,18 @@ function FilmStripPlayer({ src }) {
   return (
     <div className="center-film-wrap">
       <div className="film-strip-player" onClick={toggle}>
-        <div className="film-sprockets left">
-          {sprockets.map((_, i) => <div className="sprocket" key={i} />)}
-        </div>
-        <div className="film-sprockets right">
-          {sprockets.map((_, i) => <div className="sprocket" key={i} />)}
-        </div>
-        <div className="film-label-top">
-          <div className="film-dot" />
-          <span>OJT JOURNEY</span>
-          <div className="film-dot" />
-        </div>
-        <video
-          ref={videoRef}
-          src={src}
-          playsInline
-          preload="metadata"
-          onEnded={() => setPlaying(false)}
-        />
-        <div className="film-label-bottom">
-          <span>BELLEVUE MANILA · 2026</span>
-        </div>
+        <div className="film-sprockets left">{sprockets.map((_,i) => <div className="sprocket" key={i}/>)}</div>
+        <div className="film-sprockets right">{sprockets.map((_,i) => <div className="sprocket" key={i}/>)}</div>
+        <div className="film-label-top"><div className="film-dot"/><span>OJT JOURNEY</span><div className="film-dot"/></div>
+        <video ref={videoRef} src={src} playsInline preload="metadata" onEnded={() => setPlaying(false)}/>
+        <div className="film-label-bottom"><span>BELLEVUE MANILA · 2026</span></div>
         <div className={`film-play-overlay${playing ? " hidden" : ""}`}>
           <div className="film-play-btn">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--primary)">
-              <polygon points="6 3 20 12 6 21 6 3" />
-            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--primary)"><polygon points="6 3 20 12 6 21 6 3"/></svg>
           </div>
         </div>
-        <div className="film-corner tl" />
-        <div className="film-corner tr" />
-        <div className="film-corner bl" />
-        <div className="film-corner br" />
+        <div className="film-corner tl"/><div className="film-corner tr"/>
+        <div className="film-corner bl"/><div className="film-corner br"/>
         <div className="film-corner-sticker tl">✦</div>
         <div className="film-corner-sticker tr">♡</div>
         <div className="film-corner-sticker bl">✿</div>
@@ -2109,54 +2157,36 @@ function FilmStripPlayer({ src }) {
   );
 }
 
-// ── VIDEO / JOURNEY SECTION ───────────────────────────────────────────────────
+// ── VIDEO SECTION ─────────────────────────────────────────────────────────────
 function VideoSection({ onNavigate }) {
   return (
     <>
       <section id="video" className="video-section anim-fade-up" style={{ animationDelay:".15s" }}>
-
-        {/* ══ LEFT STICKERS ══ */}
         <div className="vs-sticker vs-s-l1">🌸</div>
         <div className="vs-sticker vs-s-l2">✿</div>
         <div className="vs-sticker vs-s-l3">♡</div>
         <div className="vs-sticker vs-s-l4">✦</div>
         <div className="vs-sticker vs-s-l5">⭒</div>
         <div className="vs-svg-sticker vs-tape-l"><WashiTape /></div>
-        <div className="vs-svg-sticker vs-sparkle-l"><SparkleSvg size={24} opacity={0.85} /></div>
-
-        {/* ══ RIGHT STICKERS ══ */}
+        <div className="vs-svg-sticker vs-sparkle-l"><SparkleSvg size={24} opacity={0.85}/></div>
         <div className="vs-sticker vs-s-r1">🌺</div>
         <div className="vs-sticker vs-s-r2">✧</div>
         <div className="vs-sticker vs-s-r3">☽</div>
         <div className="vs-sticker vs-s-r4">✿</div>
         <div className="vs-sticker vs-s-r5">𓂂</div>
         <div className="vs-svg-sticker vs-tape-r"><WashiTape /></div>
-        <div className="vs-svg-sticker vs-sparkle-r"><SparkleSvg size={20} opacity={0.7} /></div>
+        <div className="vs-svg-sticker vs-sparkle-r"><SparkleSvg size={20} opacity={0.7}/></div>
 
-        {/* ══ HEADER ══ */}
         <div className="video-label"><IconSparkle /> At The Bellevue Manila <IconSparkle /></div>
         <h2>My OJT Journey</h2>
 
-        {/* ══ THREE VIDEO STRIP ══ */}
         <div className="three-video-strip">
-          <SidePolaroidPlayer
-            src={ojtVid}
-            caption="orientation day ♡"
-            wrapClass="left-wrap"
-            badge="🎬"
-          />
-          <FilmStripPlayer src={ojtVid} />
-          <SidePolaroidPlayer
-            src={ojtVid}
-            caption="coding away~ ✨"
-            wrapClass="right-wrap"
-            badge="🌸"
-          />
+          <SidePolaroidPlayer src={ojtVid} caption="orientation day ♡" wrapClass="left-wrap" badge="🎬"/>
+          <FilmStripPlayer src={ojtVid}/>
+          <SidePolaroidPlayer src={ojtVid} caption="coding away~ ✨" wrapClass="right-wrap" badge="🌸"/>
         </div>
 
-        <button className="video-btn" onClick={onNavigate}>
-          Episodes / Events 🎬
-        </button>
+        <button className="video-btn" onClick={onNavigate}>Internship Project</button>
       </section>
       <PhotoGallery />
     </>
@@ -2179,7 +2209,7 @@ function Footer() {
   );
 }
 
-// ── MAIN PAGE COMPONENT ───────────────────────────────────────────────────────
+// ── MAIN ──────────────────────────────────────────────────────────────────────
 function MainPage({ onNavigateToMedia }) {
   return (
     <div className="page-wrap">
@@ -2193,13 +2223,10 @@ function MainPage({ onNavigateToMedia }) {
   );
 }
 
-// ── ROOT APP ──────────────────────────────────────────────────────────────────
 export default function App() {
   const [page, setPage] = useState("main");
-
   if (page === "media") {
     return <MediaPage onBack={() => { setPage("main"); window.scrollTo(0,0); }} />;
   }
-
   return <MainPage onNavigateToMedia={() => { setPage("media"); window.scrollTo(0,0); }} />;
 }

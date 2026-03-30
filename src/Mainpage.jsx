@@ -23,7 +23,92 @@ const WEEKS = [
   { label: "Week 8", bg: "#222222" },
 ];
 
+<<<<<<< HEAD
 const ROTATIONS = [-6, 4, -3, 7, -5, 3, -4, 6, -7, 2, -2, 5];
+=======
+// ── GALLERY DATA — 4 themed pages ─────────────────────────────────────────────
+const GALLERY_ITEMS = [
+  {
+    id: 1,
+    week: "Week 1",
+    date: "Feb 23 – Mar 6, 2026",
+    label: "From Research to Real Code",
+    caption:
+      "Started my OJT on Feb 23 with orientation, then straight into research - studying existing seat and table management systems and building comparison tables. By Thursday I was already designing flowcharts for both admin and client sides. Friday meant diving into Figma for UI/UX design. The next week, I moved into actual development with Laravel and React, building the landing page, all-venues page, and interactive seat map. They even invited me to a hotel event - super happy with all the funny moments and amazing food! No blockers so far, and they also taught me WebSocket and Docker.",
+    tag: "Research · Flowchart · Laravel · React",
+    theme: "week",
+    sticker: "✦",
+    captions: [
+      "my name plate! ▬",
+      "figma designs 🎨",
+      "flowchart done ✍️",
+      "orientation day! 🌸 ",
+      "hotel event!! 🎉",
+    ],
+    photos: [scrap1_a, scrap1_b, scrap1_c, scrap1_d, scrap1_e],
+  },
+  {
+    id: 2,
+    week: "Hotel Life",
+    date: "Feb 2026 onwards",
+    label: "Perks, Food & The Little Things",
+    caption:
+      "Got my locker key on day one - felt so official! The food stubs were a daily highlight because the food here is absolutely amazing every single day. The staff are incredibly kind and welcoming, but they're very strict about grooming standards - hair must be neat, uniform must be perfect, nails must be clean. It's a five-star hotel after all, even interns have to represent the brand! 🗝️🍱",
+    tag: "Locker Key · Food Stubs · Hotel Grooming",
+    theme: "food",
+    sticker: "♡",
+    captions: [
+        "my locker key! 🔑",
+        "adobo 🍖",
+        "yumm 🥪",
+        "food stub!",
+        "lumpiaa ✨",
+        "daily meal 🍽️",
+        "more food stubs 😍",
+        "cakee ♡",
+        "grateful 🙏",
+      ], photos: [food_a, food_b, food_c, food_d, food_e, food6, food7, food8, food9],
+  },
+  {
+    id: 3,
+    week: "The Stack",
+    date: "Mar 2–20, 2026",
+    label: "REST APIs, MySQL & Real-time Magic",
+    caption:
+      "The tech stack was challenging but exciting - Laravel on the backend, React on the frontend, REST API connecting everything, and MySQL as the database. They went further and taught me WebSocket for real-time reservation updates and Docker for containerization. So far, no blockers at all - just pure learning every single day. From frontend to backend, database connections to real-time features, it's been an incredible journey of growth.",
+    tag: "Laravel · REST API · MySQL · WebSocket · Docker",
+    theme: "tasks",
+    sticker: "✿",
+    captions: [
+      "Laravel + React 💻",
+      "REST API done ✓",
+      "MySQL wired 🗄️",
+      "WebSocket ⚡",
+      "Docker deploy 🐳",
+    ],
+    photos: [task_a, task_b, task_c, task_d],
+  },
+  {
+    id: 4,
+    week: "The Team",
+    date: "Mar 2026",
+    label: "Solo Week & Bellesoft Fam",
+    caption:
+      "My second week was solo - the other interns were on sem break, so I was by myself. But it never felt lonely because I always ended up hanging out at the Bellesoft department office. They always included me in everything and made me feel like I belonged. When the other interns came back, we clicked right away. Everyone is so kind and welcoming - I never felt out of place even for a moment. The Bellesoft team became like family!",
+    tag: "Bellesoft · Teamwork · Good Vibes Only",
+    theme: "team",
+    sticker: "★",
+    captions: [
+      "🤍",
+      "first group pic ✦",
+      "food trip 🍔",
+      "with Ma'am Jane 😊",
+      "with Sir Teddy & Ma'am Jane ✿",
+    ],
+    photos: [team_a, team_b, team_c, team_d],
+  },
+];
+>>>>>>> 263c7a5 (modified)
 
 function PolaroidCard({ week, rotation, index, onClick }) {
   const cardRef = useRef(null);
@@ -562,6 +647,7 @@ export default function Mainpage() {
         <div style={{ position: "absolute", right: "3%", bottom: "6%", zIndex: 4, textAlign: "left" }} />
       </section>
 
+<<<<<<< HEAD
       {/* SECTION 2 — INFO */}
       {/* SECTION 2 — INFO */}
 <section
@@ -751,6 +837,18 @@ export default function Mainpage() {
         Bellevue Manila's restaurant operations, implementing real-time booking
         management, customer interface, and administrative dashboard for
         seamless dining reservations
+=======
+// ── FOOTER ────────────────────────────────────────────────────────────────────
+function Footer() {
+  return (
+    <footer className="footer">
+      <h2>Thank You!</h2>
+      <p className="footer-sub">Thank you for viewing my internship blog. This blog showcases my journey, learning, and progress during my OJT at Bellevue Manila.</p>
+      <div className="footer-socials">
+        <a href="https://www.linkedin.com/in/sarahabane/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/zcrsam" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:abanesarah6@gmail.com">Gmail</a>
+>>>>>>> 263c7a5 (modified)
       </div>
     </div>
 

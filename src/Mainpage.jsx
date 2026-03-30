@@ -267,11 +267,11 @@ const GALLERY_ITEMS = [
     theme: "team",
     sticker: "★",
     captions: [
-      "solo week 🤍",
-      "bellesoft office ✦",
-      "always included 😊",
-      "team is back! 🎉",
-      "best group ever ✿",
+      "🤍",
+      "first group pic ✦",
+      "food trip 🍔",
+      "with Ma'am Jane 😊",
+      "with Sir Teddy & Ma'am Jane ✿",
     ],
     photos: [team_a, team_b, team_c, team_d],
   },
@@ -2168,7 +2168,7 @@ function Footer() {
   return (
     <footer className="footer">
       <h2>Thank You!</h2>
-      <p className="footer-sub">Thank you for reviewing my internship portfolio. This blog showcases my learning and progress during my OJT at Bellevue Manila.</p>
+      <p className="footer-sub">Thank you for viewing my internship blog. This blog showcases my journey, learning, and progress during my OJT at Bellevue Manila.</p>
       <div className="footer-socials">
         <a href="https://www.linkedin.com/in/sarahabane/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/zcrsam" target="_blank" rel="noopener noreferrer">GitHub</a>

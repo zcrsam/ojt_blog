@@ -1,3 +1,6 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// IMPORTS
+// ─────────────────────────────────────────────────────────────────────────────
 import { useState, useEffect, useRef, useCallback } from "react";
 import React from "react";
 import ojtVid from "./assets/ojtvid.MOV";
@@ -6,32 +9,58 @@ import ojtVid from "./assets/ojtvid.MOV";
 // ─────────────────────────────────────────────────────────────────────────────
 // VLOG DATA
 // ─────────────────────────────────────────────────────────────────────────────
+// Video data for the vlog section
 const VLOGS = [
   {
     id: "v1",
-    title: "Day in My Life",
-    emoji: "🎒",
-    tag: "vlog",
-    duration: "12:34",
+    title: "Reservation System",
+    tag: "Client Side",
+    duration: "",
     src: ojtVid,
-    desc: "A candid look at my daily routine as a full-stack intern at The Bellevue Manila — from the morning commute to late-night debugging.",
+    desc: "Client-side interface for venue browsing, seat selection, and reservation booking with real-time availability updates."
+  },
+  {
+    id: "v2",
+    title: "Reservation System",
+    tag: "Admin Side",
+    duration: "",
+    src: ojtVid,
+    desc: "Administrative dashboard for managing venues, seat layouts, reservations, and user accounts with comprehensive analytics."
+  },
+  {
+    id: "v3",
+    title: "Reservation System",
+    tag: "Notification Monitor",
+    duration: "",
+    src: ojtVid,
+    desc: "Real-time notification system for reservation alerts, status updates, and system monitoring with WebSocket integration."
   },
 ];
 
+// Document names and date ranges for the media section
 const WEEK_DATES = [
-  "Feb 23–27 2026", "Mar 2–6 2026",   "Mar 9–13 2026",
-  "Mar 16–20 2026", "Mar 23–27 2026", "Mar 30–Apr 3 2026",
-  "Apr 6–10 2026",  "Apr 13–17 2026", "Apr 20–24 2026",
+  "Timesheet - Attendance Sheet", 
+  "Report - Whole Report",   
+  "Documentation - Technical Documentation",
+  "Presentation - Project Presentation", 
+  "Evaluation - Performance Evaluation", 
+  "Certificate - Completion Certificate",
+  "Portfolio - Project Portfolio",  
+  "Final Report - Comprehensive Final Report", 
+  "Summary - Executive Summary",
 ];
+// Labels for different day types in each week
 const DAY_LABELS = ["Pictures/Videos"];
 
 // ─────────────────────────────────────────────────────────────────────────────
 // INDEXEDDB PERSISTENCE
 // ─────────────────────────────────────────────────────────────────────────────
+// IndexedDB configuration for persistent media storage
 const DB_NAME    = "ojtMediaDB";
 const DB_VERSION = 1;
 const STORE_NAME = "mediaItems";
 
+// Opens IndexedDB connection and creates object store if needed
 function openDB() {
   return new Promise((resolve, reject) => {
     const req = indexedDB.open(DB_NAME, DB_VERSION);
@@ -46,8 +75,10 @@ function openDB() {
   });
 }
 
+// Generates unique key for storing media items by week and day
 function dbKey(wi, di) { return `ojt_w${wi + 1}_d${di + 1}`; }
 
+// Loads media items from IndexedDB, falls back to localStorage
 async function dbLoad(wi, di) {
   try {
     const db = await openDB();
@@ -65,6 +96,7 @@ async function dbLoad(wi, di) {
   }
 }
 
+// Saves media items to IndexedDB, falls back to localStorage
 async function dbSave(wi, di, items) {
   try {
     const db = await openDB();
@@ -83,6 +115,7 @@ async function dbSave(wi, di, items) {
   }
 }
 
+// Converts file to base64 for storage
 function fileToBase64(file) {
   return new Promise((res) => {
     const r = new FileReader();
@@ -259,7 +292,7 @@ body{
 .vlog-thumb video{
   width:100%;
   height:auto;
-  aspect-ratio:9/16;
+  aspect-ratio:20/9;
   object-fit:cover;
   display:block;
   border-radius:12px 12px 0 0;
@@ -459,8 +492,10 @@ const IcoDownload = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="
 // ─────────────────────────────────────────────────────────────────────────────
 // PASSWORD MODAL
 // ─────────────────────────────────────────────────────────────────────────────
+// Password for protected actions (add/delete)
 const CORRECT_PASSWORD = "ojt2026";
 
+// Password protection modal for sensitive operations
 function PasswordModal({ action, onConfirm, onCancel }) {
   const [pw, setPw]       = useState("");
   const [error, setError] = useState(false);
@@ -502,17 +537,20 @@ function PasswordModal({ action, onConfirm, onCancel }) {
 // ─────────────────────────────────────────────────────────────────────────────
 // DAY BLOCK
 // ─────────────────────────────────────────────────────────────────────────────
+// Individual day block component for media management
 function DayBlock({ weekIdx, dayIdx, dayLabel }) {
-  const [open, setOpen]         = useState(false);
-  const [items, setItems]       = useState([]);
-  const [loaded, setLoaded]     = useState(false);
-  const [lightbox, setLightbox] = useState(null);
-  const [toast, setToast]       = useState(null);
-  const [saving, setSaving]     = useState(false);
-  const [pwModal, setPwModal]   = useState(null);
-  const pendingDeleteRef        = useRef(null);
-  const fileInputRef            = useRef(null);
-  const toastTimer              = useRef(null);
+  // State management for the day block
+  const [open, setOpen]         = useState(false);        // Accordion open/closed
+  const [items, setItems]       = useState([]);         // Media items array
+  const [loaded, setLoaded]     = useState(false);      // Loading state
+  const [lightbox, setLightbox] = useState(null);       // Lightbox viewer
+  const [toast, setToast]       = useState(null);       // Toast notifications
+  const [saving, setSaving]     = useState(false);      // Save operation state
+  const [pwModal, setPwModal]   = useState(null);       // Password modal
+  // Refs for operations
+  const pendingDeleteRef        = useRef(null);         // Pending delete index
+  const fileInputRef            = useRef(null);         // File input element
+  const toastTimer              = useRef(null);         // Toast timer
 
   useEffect(() => {
     let cancelled = false;
@@ -717,25 +755,26 @@ function DayBlock({ weekIdx, dayIdx, dayLabel }) {
 // ─────────────────────────────────────────────────────────────────────────────
 // WEEKLY MEDIA SECTION
 // ─────────────────────────────────────────────────────────────────────────────
+// Weekly media section with week tabs
 function WeeklyMediaSection() {
-  const [activeWeek, setActiveWeek] = useState(0);
+  const [activeWeek, setActiveWeek] = useState(0);  // Currently selected week
 
   return (
     <div className="mp-section">
       <div className="mp-section-head">
-        <h2>Photos &amp; Videos</h2>
-        <span className="mp-section-sub">by week &amp; day · auto-saved</span>
+        <h2>Documents</h2>
+       
       </div>
 
       <div className="week-tabs-wrap">
         <div className="week-tabs">
-          {WEEK_DATES.map((_, i) => (
+          {WEEK_DATES.map((docName, i) => (
             <button
               key={i}
               className={`week-tab${i === activeWeek ? " active" : ""}`}
               onClick={() => setActiveWeek(i)}
             >
-              Week {i + 1}
+              {docName.split(' - ')[0]}
             </button>
           ))}
         </div>
@@ -761,12 +800,13 @@ function WeeklyMediaSection() {
 // ─────────────────────────────────────────────────────────────────────────────
 // VLOG SECTION
 // ─────────────────────────────────────────────────────────────────────────────
+// Video section component
 function VlogSection() {
   return (
     <div className="mp-section">
       <div className="mp-section-head">
-        <h2>Vlog Series</h2>
-        <span className="mp-section-sub">1 video · click to watch</span>
+        <h2>Seat and Table Reservation</h2>
+       
       </div>
       <div className="vlog-grid">
         {VLOGS.map((v, i) => (
@@ -796,6 +836,7 @@ function VlogSection() {
 // ─────────────────────────────────────────────────────────────────────────────
 // TOPBAR
 // ─────────────────────────────────────────────────────────────────────────────
+// Navigation topbar component
 function Topbar() {
   return (
     <nav className="mp-topbar">
@@ -812,7 +853,9 @@ function Topbar() {
 // ─────────────────────────────────────────────────────────────────────────────
 // MAIN EXPORT
 // ─────────────────────────────────────────────────────────────────────────────
+// Main MediaPage component export
 export default function MediaPage({ onBack }) {
+  // Scroll to top on page load
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   return (
@@ -829,9 +872,9 @@ export default function MediaPage({ onBack }) {
 
         <div className="mp-hero anim-up">
           <div className="mp-hero-badge">📸 Behind the Scenes</div>
-          <h1><em>Memories</em></h1>
+          <h1><em>Internship Project & Documents</em></h1>
           <p className="mp-hero-sub">
-            All my OJT vlogs, daily photos, and weekly memories from my internship at The Bellevue Manila — organized and easy to browse.
+            All my OJT documents, projects, and weekly tasks from my internship at The Bellevue Manila — organized and easy to browse.
           </p>
         </div>
 

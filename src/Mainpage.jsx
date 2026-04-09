@@ -4,8 +4,11 @@ import profileImage from "./assets/profile2.jpeg";
 import week1Image from "./assets/week1.png";
 import week1Image2 from "./assets/week2.png";
 import week3Image from "./assets/week3.JPG";
-import week5Image from "./assets/week5.JPG";
 import week4Image from "./assets/week4.png";
+import week5Image from "./assets/week5.JPG";
+import week6Image from "./assets/week6.jpg";
+import week7Image from "./assets/week7.jpg";
+
 import ojtVid from "./assets/ojtvid.MOV";
 import MediaPage from "./MediaPage";
 
@@ -146,22 +149,39 @@ const POSTS = [
     title: "Deployment & Handoff",
     excerpt: "Deployment, Documentation & Presentation",
     author: "Sarah C. Abane",
-    date: "March 30 – April 3 2026",
+    date: "March 30 – April 1 2026",
     category: "WEEK 6",
-    imageUrl: week1Image2,
+    imageUrl: week6Image,
     modal: {
       overview: "Final stretch — deploying the system, writing documentation, and preparing for the internship presentation.",
       days: [
-        { date: "March 30, 2026 (Monday)", task: "Deployed system to staging environment.", blocker: "n/a" },
-        { date: "March 31, 2026 (Tuesday)", task: "Wrote technical and user documentation.", blocker: "n/a" },
-        { date: "April 1, 2026 (Wednesday)", task: "Prepared presentation slides and demo walkthrough.", blocker: "n/a" },
-        { date: "April 2, 2026 (Thursday)", task: "Final demo with supervisor review.", blocker: "n/a" },
-        { date: "April 3, 2026 (Friday)", task: "Handoff and closing documentation.", blocker: "n/a" },
-      ],
-      deliverables: ["Deployed System", "Technical Documentation", "Presentation Deck"],
+        { date: "March 30, 2026 (Monday)", task: "Added Manage Booking feature (cancel, edit, reschedule, rebook)", blocker: "n/a" },
+        { date: "March 31, 2026 (Tuesday)", task: "Implemented sorting in Admin Dashboard to display the most recent reservations at the top. Simplified input fields in AlabangReserve by removing dropdown, increment, and decrement controls. Improved mobile responsiveness in Alabang Reservation.", blocker: "n/a" },
+        { date: "April 1, 2026 (Wednesday)", task: "Front end only: Implemented Manage Booking page with search (name + last digit of phone number), edit/view features, and conditional cancellation (pending only). Modified the SeatMap to become dynamic (added feature that supports seats without tables + venue creation). Modified the notification dashboard (added the pending reservations)", blocker: "n/a" },
+        ],
+      deliverables: ["Management", "Sorting"],
     },
   },
-  { id: 7, title: "Week 7", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 6-10 2026", category: "WEEK 7", imageUrl: week1Image2, modal: null },
+  {
+    id: 7,
+    title: "Advanced Features & Email Integration",
+    excerpt: "Manage Booking, Email System & Final Enhancements",
+    author: "Sarah C. Abane",
+    date: "April 6 - April 10, 2026",
+    category: "WEEK 7",
+    imageUrl: week7Image,
+    modal: {
+      overview: "Implemented advanced booking management features including email notifications, search functionality, and database integration for the Manage Booking system.",
+      days: [
+        { date: "April 6, 2026 (Monday)", task: "Connect Manage Booking into the database. Email System: Implemented Gmail SMTP integration with custom templates for all reservation statuses", blocker: "n/a" },
+        { date: "April 7, 2026 (Tuesday)", task: "Fixed default screen in notification page (Pending reservations). Used reference code instead of combination code; added forgot reference code feature reservation statuses", blocker: "n/a" },
+        { date: "April 8, 2026 (Wednesday)", task: "Implemented edit and cancel booking features with full database integration and real-time sync to the Admin Dashboard. Updated Admin Dashboard logic: once a reservation is rejected, it can no longer be approved.", blocker: "n/a" },
+        { date: "April 9, 2026 (Thursday)", task: "Fixed UI in Manage Booking page (added loading animation, fixed table alignment, improved responsive design)", blocker: "n/a" },
+        { date: "April 10, 2026 (Friday)", task: "edit", blocker: "n/a" },
+      ],
+      deliverables: ["Manage Booking System", "Email Notification System", "Advanced Search Features", "Dynamic SeatMap", "Enhanced Admin Dashboard"],
+    },
+  },
   { id: 8, title: "Week 8", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 13-17 2026", category: "WEEK 8", imageUrl: week1Image2, modal: null },
   { id: 9, title: "Week 9", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 20-24 2026", category: "WEEK 9", imageUrl: week1Image2, modal: null },
 ];
@@ -1634,7 +1654,7 @@ function Hero() {
     <section className="hero">
       <div className="anim-fade-left" style={{ animationDelay:".1s" }}>
         <div className="hero-badge">welcome to my OJT blog! ✨</div>
-        <h1>Hello and <em>Hola!</em></h1>
+        <h1>Hello and <em>Mabuhay!</em></h1>
         <p className="hero-desc">
           I'm a 4th year student at Bicol University completing my 486-hour OJT at{" "}
           <strong>The Bellevue Manila</strong> under the{" "}
@@ -2186,7 +2206,7 @@ function VideoSection({ onNavigate }) {
           <SidePolaroidPlayer src={ojtVid} caption="coding away~ ✨" wrapClass="right-wrap" badge="🌸"/>
         </div>
 
-        <button className="video-btn" onClick={onNavigate}>Internship Project</button>
+        <button className="video-btn" onClick={onNavigate}>Internship Project & Documents</button>
       </section>
       <PhotoGallery />
     </>

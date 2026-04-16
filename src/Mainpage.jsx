@@ -50,7 +50,7 @@ const POSTS = [
     id: 1,
     title: "Laying the Foundation",
     excerpt: "Research, System Analysis & Flowchart Design",
-    author: "Sarah C. Abane",
+    author: "Elaine Mae A. Bertiz",
     date: "February 23-27 2026",
     category: "WEEK 1",
     imageUrl: week1Image,
@@ -70,7 +70,7 @@ const POSTS = [
     id: 2,
     title: "System Development Phase",
     excerpt: "Frontend Development for Admin & Client Side",
-    author: "Sarah C. Abane",
+    author: "Elaine Mae A. Bertiz",
     date: "March 2-6 2026",
     category: "WEEK 2",
     imageUrl: week1Image2,
@@ -90,7 +90,7 @@ const POSTS = [
     id: 3,
     title: "Authentication & Database Integration",
     excerpt: "Backend Development with Real-time Reservation System",
-    author: "Sarah C. Abane",
+    author: "Elaine Mae A. Bertiz",
     date: "March 9-13 2026",
     category: "WEEK 3",
     imageUrl: week3Image,
@@ -110,7 +110,7 @@ const POSTS = [
     id: 4,
     title: "Real-time Features & UI Improvements",
     excerpt: "WebSocket Integration, Notification System & Dashboard Enhancements",
-    author: "Sarah C. Abane",
+    author: "Elaine Mae A. Bertiz",
     date: "March 16-20 2026",
     category: "WEEK 4",
     imageUrl: week4Image,
@@ -130,7 +130,7 @@ const POSTS = [
     id: 5,
     title: "Notification Management & Code Optimization",
     excerpt: "Dashboard Features, Pagination & Performance Improvements",
-    author: "Sarah C. Abane",
+    author: "Elaine Mae A. Bertiz",
     date: "March 23-27 2026",
     category: "WEEK 5",
     imageUrl: week5Image,
@@ -148,7 +148,7 @@ const POSTS = [
     id: 6,
     title: "Deployment & Handoff",
     excerpt: "Deployment, Documentation & Presentation",
-    author: "Sarah C. Abane",
+    author: "Elaine Mae A. Bertiz",
     date: "March 30 – April 1 2026",
     category: "WEEK 6",
     imageUrl: week6Image,
@@ -166,7 +166,7 @@ const POSTS = [
     id: 7,
     title: "Advanced Features & Email Integration",
     excerpt: "Manage Booking, Email System & Final Enhancements",
-    author: "Sarah C. Abane",
+    author: "Elaine Mae A. Bertiz",
     date: "April 6 - April 10, 2026",
     category: "WEEK 7",
     imageUrl: week7Image,
@@ -182,8 +182,8 @@ const POSTS = [
       deliverables: ["Manage Booking System", "Email Notification System", "Advanced Search Features", "Dynamic SeatMap", "Enhanced Admin Dashboard"],
     },
   },
-  { id: 8, title: "Week 8", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 13-17 2026", category: "WEEK 8", imageUrl: week1Image2, modal: null },
-  { id: 9, title: "Week 9", excerpt: "Coming soon...", author: "Sarah C. Abane", date: "April 20-24 2026", category: "WEEK 9", imageUrl: week1Image2, modal: null },
+  { id: 8, title: "Week 8", excerpt: "Coming soon...", author: "Elaine Mae A. Bertiz", date: "April 13-17 2026", category: "WEEK 8", imageUrl: week1Image2, modal: null },
+  { id: 9, title: "Week 9", excerpt: "Coming soon...", author: "Elaine Mae A. Bertiz", date: "April 20-24 2026", category: "WEEK 9", imageUrl: week1Image2, modal: null },
 ];
 
 // ── GALLERY DATA ──────────────────────────────────────────────────────────────
@@ -1625,7 +1625,7 @@ function SiteHeader() {
         <div className="nav-inner">
           <button className="hamburger" onClick={() => setMenuOpen(true)}><IconMenu /></button>
           <a href="/" className="nav-logo">
-            <IconSparkle /> Sarah C. Abane
+            <IconSparkle /> Elaine Mae A. Bertiz
             <span className="nav-logo-sub">— blog</span>
           </a>
           <ul className="nav-links">
@@ -1670,7 +1670,7 @@ function Hero() {
         <div className="hero-img-card">
           <img
             src={profileImage}
-            alt="Sarah C. Abane"
+            alt="Elaine Mae A. Bertiz"
             onError={e => { e.target.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80"; }}
           />
           <div className="hero-heart">♡</div>
@@ -2220,11 +2220,11 @@ function Footer() {
       <h2>Thank You!</h2>
       <p className="footer-sub">Thank you for viewing my internship blog. This blog showcases my journey, learning, and progress during my OJT at Bellevue Manila.</p>
       <div className="footer-socials">
-        <a href="https://www.linkedin.com/in/sarahabane/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/zcrsam" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:abanesarah6@gmail.com">Gmail</a>
+        <a href="https://www.linkedin.com/in/elaine-bertiz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/elainemaebertiz" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:elainemaebertiz@gmail.com">Gmail</a>
       </div>
-      <p className="footer-copy">© {new Date().getFullYear()} Sarah C. Abane</p>
+      <p className="footer-copy">© {new Date().getFullYear()} Elaine Mae A. Bertiz</p>
     </footer>
   );
 }

@@ -1,15 +1,11 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import profileImage from "./assets/profile.jpg";
-import profile1Image from "./assets/profile1.png";
-import profile2Image from "./assets/profile2.jpeg";
-import week1Image from "./assets/week1.png";
-import week4Image from "./assets/week4.png";
-import week6Image from "./assets/week6.jpg";
-import profile3Image from './assets/profile3.png'
-import profile4Image from './assets/profile4.png'
-import profile5Image from './assets/profile5.png'
+import profile4Image from "./assets/profile1.png";
+import profile1Image from "./assets/profile2.jpeg";
+import profile2Image from "./assets/profile.jpg";
+import profile5Image from "./assets/week4.png";
+
 
 import "@fontsource/league-spartan";
 import "@fontsource/league-spartan/700.css";
@@ -519,12 +515,7 @@ export default function Mainpage() {
             zIndex: 3,
           }}
         >
-          <img
-            ref={heroRightBottomInnerRef}
-            src={profile3Image}
-            alt="Sarah Abane"
-            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 100%", display: "block", transformOrigin: "center center" }}
-          />
+          
         </div>
 
         {/* Top right image — large */}

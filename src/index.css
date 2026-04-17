@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url('https://googleapis.com');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", sans-serif;
+    font-family: 'League Gothic', sans-serif;
+
   line-height: 1.5;
   font-weight: 400;
 
